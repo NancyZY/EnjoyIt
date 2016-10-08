@@ -16,23 +16,22 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    NSLog(@"BaseViewController loading...");
-    self.view.backgroundColor = [UIColor redColor];
-    UIButton *leftButton = [UIButton  buttonWithType:UIButtonTypeCustom];
-    [leftButton setImage:[UIImage imageNamed:@"Image_scan"] forState:UIControlStateNormal];
-    leftButton.frame = CGRectMake(0, 0, 25, 25);
-    [leftButton addTarget:self action:@selector(tappedScan) forControlEvents:UIControlEventTouchUpInside];
-    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc]initWithCustomView:leftButton];
     
-    UIButton *rightButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    [rightButton setImage:[UIImage imageNamed:@"btn_search"] forState:UIControlStateNormal];
-    rightButton.frame = CGRectMake(0, 0, 25, 25);
-    [rightButton addTarget:self action:@selector(tappedSearch) forControlEvents:UIControlEventTouchUpInside];
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithCustomView:rightButton];
+    UIButton *leftbutton=[UIButton buttonWithType:UIButtonTypeCustom];
+    [leftbutton setImage: [UIImage imageNamed:@"Image_scan"] forState:UIControlStateNormal];
+    leftbutton.frame=CGRectMake(0, 0, 25, 25);
+    [leftbutton addTarget:self action:@selector(tappedScan) forControlEvents:UIControlEventTouchUpInside];
+    self.navigationItem.leftBarButtonItem=[[UIBarButtonItem alloc]initWithCustomView:leftbutton];
     
-    UIImageView *titleView = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, 104, 28)];
-    titleView.image = [UIImage imageNamed:@"logo"];
-    self.navigationItem.titleView = titleView;
+    UIButton *rightbutton=[UIButton buttonWithType:UIButtonTypeCustom];
+    [rightbutton setImage: [UIImage imageNamed:@"btn_search"] forState:UIControlStateNormal];
+    rightbutton.frame=CGRectMake(0, 0, 25, 25);
+    [rightbutton addTarget:self action:@selector(tappedSearch) forControlEvents:UIControlEventTouchUpInside];
+    self.navigationItem.rightBarButtonItem=[[UIBarButtonItem alloc]initWithCustomView:rightbutton];
+    
+    UIImageView *titleView=[[UIImageView alloc]initWithFrame:CGRectMake(0, 0, 104, 28)];
+    titleView.image=[UIImage imageNamed:@"logo"];
+    self.navigationItem.titleView=titleView;
 }
 
 - (void) viewDidDisappear:(BOOL)animated{

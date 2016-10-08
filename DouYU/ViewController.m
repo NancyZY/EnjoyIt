@@ -12,6 +12,7 @@
 #import "ColumnViewController.h"
 #import "OnlineViewController.h"
 #import "MineViewController.h"
+#import "BaseNaviController.h"
 
 @interface ViewController ()
 
@@ -40,26 +41,30 @@
     [recommendVC.tabBarItem setTitle:@"推荐"];
     [recommendVC.tabBarItem setImage:[UIImage imageNamed:@"btn_home_normal"]];
     [recommendVC.tabBarItem setSelectedImage:[UIImage imageNamed:@"btn_home_selected"]];
-    [childVCArray addObject:recommendVC];
+    BaseNaviController *recommendNavC = [[BaseNaviController alloc] initWithRootViewController:recommendVC];
+    [childVCArray addObject:recommendNavC];
     
     ColumnViewController *columnVC = [[ColumnViewController alloc] init];
     [columnVC.tabBarItem setTitle:@"栏目"];
     [columnVC.tabBarItem setImage:[UIImage imageNamed:@"btn_column_normal"]];
     [columnVC.tabBarItem setSelectedImage:[UIImage imageNamed:@"btn_column_selected"]];
-    [childVCArray addObject:columnVC];
+    BaseNaviController *columnNavC = [[BaseNaviController alloc] initWithRootViewController:columnVC];
+    [childVCArray addObject:columnNavC];
     
     
     OnlineViewController *onlineVC = [[OnlineViewController alloc] init];
     [onlineVC.tabBarItem setTitle:@"直播"];
     [onlineVC.tabBarItem setImage:[UIImage imageNamed:@"btn_live_normal"]];
     [onlineVC.tabBarItem setSelectedImage:[UIImage imageNamed:@"btn_live_selected"]];
-    [childVCArray addObject:onlineVC];
+     BaseNaviController *onlineNavC = [[BaseNaviController alloc] initWithRootViewController:onlineVC];
+    [childVCArray addObject:onlineNavC];
     
     MineViewController *mineVC = [[MineViewController alloc] init];
     [mineVC.tabBarItem setTitle:@"我的"];
     [mineVC.tabBarItem setImage:[UIImage imageNamed:@"btn_user_normal"]];
     [mineVC.tabBarItem setSelectedImage:[UIImage imageNamed:@"btn_user_selected"]];
-    [childVCArray addObject:mineVC];
+    BaseNaviController *mineNavC = [[BaseNaviController alloc] initWithRootViewController:mineVC];
+    [childVCArray addObject:mineNavC];
     
     [self setViewControllers:childVCArray];
     

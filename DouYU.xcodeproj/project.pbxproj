@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		92D12EC202A8DFC087254272 /* libPods-DouYU.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BFDDE25E54D263CF042BE45 /* libPods-DouYU.a */; };
+		B94E8A781DA8F92A008D786D /* BaseNaviController.m in Sources */ = {isa = PBXBuildFile; fileRef = B94E8A771DA8F92A008D786D /* BaseNaviController.m */; };
 		B976405B1D9CA8ED00A63614 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B976405A1D9CA8ED00A63614 /* main.m */; };
 		B976405E1D9CA8ED00A63614 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B976405D1D9CA8ED00A63614 /* AppDelegate.m */; };
 		B97640611D9CA8ED00A63614 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B97640601D9CA8ED00A63614 /* ViewController.m */; };
@@ -30,6 +31,8 @@
 		6ED9B0B580FF87CC0F23E5F4 /* Pods-DouYU.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DouYU.release.xcconfig"; path = "Pods/Target Support Files/Pods-DouYU/Pods-DouYU.release.xcconfig"; sourceTree = "<group>"; };
 		7BFDDE25E54D263CF042BE45 /* libPods-DouYU.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DouYU.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF8B5785B532B94031114740 /* Pods-DouYU.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DouYU.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DouYU/Pods-DouYU.debug.xcconfig"; sourceTree = "<group>"; };
+		B94E8A761DA8F92A008D786D /* BaseNaviController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BaseNaviController.h; path = Base/BaseNaviController.h; sourceTree = "<group>"; };
+		B94E8A771DA8F92A008D786D /* BaseNaviController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BaseNaviController.m; path = Base/BaseNaviController.m; sourceTree = "<group>"; };
 		B97640561D9CA8ED00A63614 /* DouYU.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DouYU.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B976405A1D9CA8ED00A63614 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B976405C1D9CA8ED00A63614 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -130,6 +133,8 @@
 				B97640911D9E040800A63614 /* CollectionViewCell.h */,
 				B97640921D9E040800A63614 /* CollectionViewCell.m */,
 				B97640931D9E040800A63614 /* CollectionViewCell.xib */,
+				B94E8A761DA8F92A008D786D /* BaseNaviController.h */,
+				B94E8A771DA8F92A008D786D /* BaseNaviController.m */,
 			);
 			path = DouYU;
 			sourceTree = "<group>";
@@ -280,6 +285,7 @@
 				B97640781D9CB62500A63614 /* RecommendViewController.m in Sources */,
 				B97640751D9CB2AF00A63614 /* BaseViewController.m in Sources */,
 				B976405E1D9CA8ED00A63614 /* AppDelegate.m in Sources */,
+				B94E8A781DA8F92A008D786D /* BaseNaviController.m in Sources */,
 				B976408C1D9D151C00A63614 /* CustomCell.m in Sources */,
 				B97640901D9DFF0B00A63614 /* ColumnModel.m in Sources */,
 				B976407B1D9CBD4900A63614 /* ColumnViewController.m in Sources */,
