@@ -34,7 +34,8 @@
     
 }
 
--(void)initChildViewControllers{
+-(void)initChildViewControllers
+{
     NSMutableArray *childVCArray = [[NSMutableArray alloc] initWithCapacity:4];
     
     RecommendViewController *recommendVC = [[RecommendViewController alloc] init];

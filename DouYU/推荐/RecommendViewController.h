@@ -11,5 +11,5 @@
 #import "BaseViewController.h"
 
 @interface RecommendViewController : BaseViewController
-
+@property(nonatomic,strong)NSMutableArray *topDataArray;
 @end

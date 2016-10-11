@@ -25,6 +25,8 @@
 		B97640901D9DFF0B00A63614 /* ColumnModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B976408F1D9DFF0B00A63614 /* ColumnModel.m */; };
 		B97640941D9E040800A63614 /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B97640921D9E040800A63614 /* CollectionViewCell.m */; };
 		B97640951D9E040800A63614 /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B97640931D9E040800A63614 /* CollectionViewCell.xib */; };
+		B9A0DBBA1DAC8611001DD79C /* TOPdata.m in Sources */ = {isa = PBXBuildFile; fileRef = B9A0DBB91DAC8611001DD79C /* TOPdata.m */; };
+		B9A0DBBD1DACC6F7001DD79C /* NSString+Times.m in Sources */ = {isa = PBXBuildFile; fileRef = B9A0DBBC1DACC6F7001DD79C /* NSString+Times.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +64,11 @@
 		B97640911D9E040800A63614 /* CollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CollectionViewCell.h; path = "栏目/CollectionViewCell.h"; sourceTree = "<group>"; };
 		B97640921D9E040800A63614 /* CollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CollectionViewCell.m; path = "栏目/CollectionViewCell.m"; sourceTree = "<group>"; };
 		B97640931D9E040800A63614 /* CollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CollectionViewCell.xib; path = "栏目/CollectionViewCell.xib"; sourceTree = "<group>"; };
+		B9A0DBB71DAC8587001DD79C /* URL.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = URL.h; path = "推荐/URL.h"; sourceTree = "<group>"; };
+		B9A0DBB81DAC8611001DD79C /* TOPdata.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TOPdata.h; path = "推荐/TOPdata.h"; sourceTree = "<group>"; };
+		B9A0DBB91DAC8611001DD79C /* TOPdata.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TOPdata.m; path = "推荐/TOPdata.m"; sourceTree = "<group>"; };
+		B9A0DBBB1DACC6F7001DD79C /* NSString+Times.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+Times.h"; path = "Base/NSString+Times.h"; sourceTree = "<group>"; };
+		B9A0DBBC1DACC6F7001DD79C /* NSString+Times.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+Times.m"; path = "Base/NSString+Times.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +89,16 @@
 				7BFDDE25E54D263CF042BE45 /* libPods-DouYU.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B9036CEB1DA9F3AD006BD2BF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B9A0DBB71DAC8587001DD79C /* URL.h */,
+				B9A0DBB81DAC8611001DD79C /* TOPdata.h */,
+				B9A0DBB91DAC8611001DD79C /* TOPdata.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 		B976404D1D9CA8ED00A63614 = {
@@ -105,6 +122,7 @@
 		B97640581D9CA8ED00A63614 /* DouYU */ = {
 			isa = PBXGroup;
 			children = (
+				B9036CEB1DA9F3AD006BD2BF /* Model */,
 				B976405C1D9CA8ED00A63614 /* AppDelegate.h */,
 				B976405D1D9CA8ED00A63614 /* AppDelegate.m */,
 				B976405F1D9CA8ED00A63614 /* ViewController.h */,
@@ -135,6 +153,8 @@
 				B97640931D9E040800A63614 /* CollectionViewCell.xib */,
 				B94E8A761DA8F92A008D786D /* BaseNaviController.h */,
 				B94E8A771DA8F92A008D786D /* BaseNaviController.m */,
+				B9A0DBBB1DACC6F7001DD79C /* NSString+Times.h */,
+				B9A0DBBC1DACC6F7001DD79C /* NSString+Times.m */,
 			);
 			path = DouYU;
 			sourceTree = "<group>";
@@ -281,6 +301,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B9A0DBBD1DACC6F7001DD79C /* NSString+Times.m in Sources */,
 				B97640611D9CA8ED00A63614 /* ViewController.m in Sources */,
 				B97640781D9CB62500A63614 /* RecommendViewController.m in Sources */,
 				B97640751D9CB2AF00A63614 /* BaseViewController.m in Sources */,
@@ -290,6 +311,7 @@
 				B97640901D9DFF0B00A63614 /* ColumnModel.m in Sources */,
 				B976407B1D9CBD4900A63614 /* ColumnViewController.m in Sources */,
 				B976407E1D9CBD7A00A63614 /* OnlineViewController.m in Sources */,
+				B9A0DBBA1DAC8611001DD79C /* TOPdata.m in Sources */,
 				B976405B1D9CA8ED00A63614 /* main.m in Sources */,
 				B97640941D9E040800A63614 /* CollectionViewCell.m in Sources */,
 				B97640811D9CBD9200A63614 /* MineViewController.m in Sources */,
